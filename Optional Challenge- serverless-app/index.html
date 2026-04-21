@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Serverless Demo</h2>
+
+<button onclick="callLambda()">Send request</button>
+
+<script>
+function callLambda() {
+ fetch("https://euiprbfcxmta7o73vcxzqqrtku0oacqf.lambda-url.eu-north-1.on.aws/")
+ .then(res => res.text())
+ .then(data => alert(data));
+}
+</script>
+
+</body>
+</html>
